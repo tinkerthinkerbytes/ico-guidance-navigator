@@ -1,15 +1,21 @@
 # ICO Guidance Navigator (Bounded RAG Demo)
 
+## Context
+
+This repository explores patterns for building small, deterministic RAG systems for situations where you want the system to stay in its lane.
+
+The demo retrieves from a fixed local corpus, produces summaries that are explicitly grounded in those sections, and refuses questions that would push it into legal or compliance judgement. The emphasis is on predictable behaviour and clear limits, rather than trying to answer everything.
+
+## Description
 Small, local, **bounded RAG** demo to help internal teams **navigate** (not interpret) ICO-style guidance by:
 
 - retrieving relevant guidance sections from a **static local corpus**
 - producing a **grounded, advisory-only** summary
 - refusing inputs that ask for legal/compliance judgement or “what should we do” actions
 
-## Non-goals (hard constraints)
+## Non-goals (intentional constraints)
 
 This project is **not**:
-
 - legal advice
 - a compliance decision engine
 - a policy interpretation engine
